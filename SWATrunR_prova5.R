@@ -2,6 +2,9 @@
 # SWATrunR test using Tordera data in SWAT2012 format.
 # as per: https://chrisschuerz.github.io/SWATrunR/articles/SWATrunR.html#loading-swatrunr
 
+library(usethis)
+use_github()
+
 
 # If the package remotes is not installed run first:
 install.packages('remotes')
@@ -13,7 +16,7 @@ library(SWATrunR)
 
 #### LOADING SWAT PROJECT ####
 # The path where the SWAT demo project will be written
-Data_path <- "C:/Users/a.batlle/Desktop/SWATrunR_SampleData/SWAT2012_rev622_TorderaProva5"
+Data_path <- "C:/Users/a.batlle/OneDrive - CREAF/Documentos/local_AquaINFRA/SWAT_output/resultatsswat_2024-03-22_1305/SWATrunR/SWAT2012_rev622_TorderaProva5_data"
 
 
 
@@ -53,5 +56,5 @@ ggplot(data = q_plot) +
   scale_linetype_manual(values = c('dotted', 'solid', 'dashed')) + 
   theme_bw()
 
-ggsave("C:/Users/a.batlle/Desktop/SWATrunR_SampleData/SWAT2012_rev622_TorderaProva5_Results/FLOW_OUT_FirstRun.png")
-ggsave("C:/Users/a.batlle/Desktop/SWATrunR_SampleData/SWAT_demo_Results/FLOW_OUT_FirstRun.png")
+ggsave("C:/Users/a.batlle/OneDrive - CREAF/Documentos/local_AquaINFRA/SWAT_output/resultatsswat_2024-03-22_1305/SWATrunR/SWAT2012_rev622_TorderaProva5_Results/FLOW_OUT_FirstRun.png")
+
